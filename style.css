@@ -137,3 +137,54 @@ body{
     padding-left:32px;
 
 }
+
+.caja-texto{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    padding-top: 579px;
+    padding-left: 32px;
+}
+
+.texto1{
+
+    width: 336px;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texto2{
+
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
