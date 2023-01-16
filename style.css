@@ -96,6 +96,12 @@ body{
 
 }
 
+.encriptar:hover{
+
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
 .desencriptar{
 
     display: flex;
@@ -121,6 +127,13 @@ body{
     line-height: 19px;
     color: #0A3871;
     flex-grow: 1;
+
+}
+
+.desencriptar:hover{
+
+    background: #0A3871;
+    color: #FFFFFF;
 
 }
 
