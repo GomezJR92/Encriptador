@@ -27,10 +27,10 @@ body{
 
     position: absolute;
     width: 577px;
-    height: 48px;
+    height: 400px;
     left: 240px;
     top: 168px;
-
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -38,7 +38,14 @@ body{
     line-height: 150%;
     color: #0A3871;
     border: 0;
-    
+
+
+}
+
+.input-padron{
+
+    display: inline-block;
+    background: #F3F5FC;
 }
 
 ::placeholder{

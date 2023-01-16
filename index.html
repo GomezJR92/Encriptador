@@ -17,27 +17,38 @@
         <img src="./imagenes/Logo.png" class="logo">   
 
         
-        <input  id="ingrese-texto" class="input-padron" required placeholder="Ingrese el texto aqui"></textarea>
+        <textarea  id="ingrese-texto" class="input-padron" required placeholder="Ingrese el texto aqui"></textarea>
 
         <div class="botones">
 
             
-            <button class="encriptar">Encriptar</button>
-            <button class="desencriptar">Desencriptar</button>
+            <input type="button" class="encriptar" onclick="textoEncriptado()" value="Encriptar">
+            <input type="button" class="desencriptar" value="Desencriptar">
+
+            <script>
+
+                function textoEncriptado(){
+                    document.getElementById("desaparecer").style.display = "none";
+
+                    
+                }
+            </script>
             
 
         </div>
 
         <div class="rectangulo">
+            <div id="desaparecer">
 
-            <img src="./imagenes/Muñeco.png" class="muñeco">
+                <img src="./imagenes/Muñeco.png" class="muñeco" >
 
-            <div class="caja-texto">
+                <div class="caja-texto">
 
-                <p class="texto1">Ningun mensaje fue encontrado</p>
-                <p class="texto2">Ingrese el texto que desea encriptar o desencriptar</p>
+                    <p class="texto1" id="desaparecer2" >Ningun mensaje fue encontrado</p>
+                    <p class="texto2" id="desaparecer3" >Ingrese el texto que desea encriptar o desencriptar</p>
 
-            </div>
+                </div>
+             </div>
 
         </div>
 
