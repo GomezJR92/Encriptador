@@ -24,17 +24,27 @@
 
             
             <input type="button" class="encriptar" onclick="textoEncriptado()" value="Encriptar">
-            <input type="button" class="desencriptar" value="Desencriptar">
+            <input type="button" class="desencriptar" onclick="textoDesencriptado()" value="Desencriptar">
 
             <script>
 
                 function textoEncriptado(){
 
-                  
-                    document.getElementById("desaparecer").innerHTML =document.getElementById("ingrese-texto").value; ;
+                    var textE= document.getElementById("ingrese-texto").value;
+                    var resultadoE= textE.replaceAll("a", "ai").replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("o", "ober").replaceAll("u", "ufat");
+                    document.getElementById("desaparecer").innerHTML =resultadoE ;
 
                     
                 }
+
+                function textoDesencriptado(){
+
+                    var textE= document.getElementById("ingrese-texto").value;
+                    var resultadoD= textE.replaceAll("ai","a").replaceAll("enter","e").replaceAll("imes","i").replaceAll("ober","o").replaceAll("ufat","u");
+                    document.getElementById("desaparecer").innerHTML =resultadoD ;
+
+
+}
             </script>
             
 
