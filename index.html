@@ -35,7 +35,7 @@
                    
                     var textE= document.getElementById("ingrese-texto").value;
                     var resultadoE= textE.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").replaceAll("o", "ober").replaceAll("u", "ufat");
-                    var encriptadoClass=`<p class="texto-devuelto">${resultadoE}</p>`;
+                    var encriptadoClass=`<p class="texto-devuelto">${resultadoE}</p><input type="button" class="copiar"  value="copiar">`;
                     document.getElementById("desaparecer").innerHTML =encriptadoClass;
                     
                 }
