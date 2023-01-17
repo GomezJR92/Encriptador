@@ -26,14 +26,17 @@
             <input type="button" class="encriptar" onclick="textoEncriptado()" value="Encriptar">
             <input type="button" class="desencriptar" onclick="textoDesencriptado()" value="Desencriptar">
 
-            <script>
+            <script>    
+
+                
 
                 function textoEncriptado(){
-
+                    
+                   
                     var textE= document.getElementById("ingrese-texto").value;
-                    var resultadoE= textE.replaceAll("a", "ai").replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("o", "ober").replaceAll("u", "ufat");
-                    document.getElementById("desaparecer").innerHTML =resultadoE ;
-
+                    var resultadoE= textE.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").replaceAll("o", "ober").replaceAll("u", "ufat");
+                    var encriptadoClass=`<p class="texto-devuelto">${resultadoE}</p>`;
+                    document.getElementById("desaparecer").innerHTML =encriptadoClass;
                     
                 }
 
@@ -41,7 +44,8 @@
 
                     var textE= document.getElementById("ingrese-texto").value;
                     var resultadoD= textE.replaceAll("ai","a").replaceAll("enter","e").replaceAll("imes","i").replaceAll("ober","o").replaceAll("ufat","u");
-                    document.getElementById("desaparecer").innerHTML =resultadoD ;
+                    var desencriptadoClass=`<p class="texto-devuelto">${resultadoD}</p>`;
+                    document.getElementById("desaparecer").innerHTML =desencriptadoClass;
 
 
 }
