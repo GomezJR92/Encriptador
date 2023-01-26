@@ -35,7 +35,7 @@
                    
                     var textE= document.getElementById("ingrese-texto").value;
                     var resultadoE= textE.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").replaceAll("o", "ober").replaceAll("u", "ufat");
-                    var encriptadoClass=`<p class="texto-devuelto">${resultadoE}</p><input type="button" class="copiar"  value="copiar">`;
+                    var encriptadoClass=`<p class="textoDevuelto" id="texto">${resultadoE}</p>`;
                     document.getElementById("desaparecer").innerHTML =encriptadoClass;
                     
                 }
@@ -44,12 +44,11 @@
 
                     var textE= document.getElementById("ingrese-texto").value;
                     var resultadoD= textE.replaceAll("ai","a").replaceAll("enter","e").replaceAll("imes","i").replaceAll("ober","o").replaceAll("ufat","u");
-                    var desencriptadoClass=`<p class="texto-devuelto">${resultadoD}</p>`;
+                    var desencriptadoClass=`<p class="textoDevuelto">${resultadoD}</p>`;
                     document.getElementById("desaparecer").innerHTML =desencriptadoClass;
+                }
 
-
-}
-            </script>
+                </script>
             
 
         </div>
